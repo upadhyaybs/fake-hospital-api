@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { v4 as uuidv4 } from 'uuid';
-import { CreateHospitalDto } from './dto/create-hospital.dto';
-import { UpdateHospitalDto } from './dto/update-hospital.dto';
-import { Hospital } from './entities/hospital.entity';
+import { CreateHospitalDto } from '../dto/create-hospital.dto';
+import { UpdateHospitalDto } from '../dto/update-hospital.dto';
+import { Hospital } from '../entities/hospital.entity';
 
 @Injectable()
 export class HospitalService {

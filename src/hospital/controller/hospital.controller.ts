@@ -7,9 +7,9 @@ import {
   Param,
   Delete,
 } from '@nestjs/common';
-import { HospitalService } from './hospital.service';
-import { CreateHospitalDto } from './dto/create-hospital.dto';
-import { UpdateHospitalDto } from './dto/update-hospital.dto';
+import { HospitalService } from '../service/hospital.service';
+import { CreateHospitalDto } from '../dto/create-hospital.dto';
+import { UpdateHospitalDto } from '../dto/update-hospital.dto';
 
 @Controller('hospital')
 export class HospitalController {
