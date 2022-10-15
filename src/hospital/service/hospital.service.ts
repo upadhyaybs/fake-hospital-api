@@ -59,11 +59,11 @@ export class HospitalService {
   }
 
   findOne(id: string) {
-    return this.hospitals.filter((obj) => obj.id === id);
+    return this.hospitals.find((obj) => obj.id === id);
   }
 
-  findByZip(zip: string) {
-    return this.hospitals.filter((obj) => obj.zip === zip);
+  findByZip(zip: string): Hospital {
+    return this.hospitals.find((obj) => obj.zip === zip);
   }
 
   update(id: number, updateHospitalDto: UpdateHospitalDto) {}
