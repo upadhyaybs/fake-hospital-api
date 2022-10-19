@@ -66,7 +66,7 @@ export class HospitalService {
     return this.hospitals.find((obj) => obj.zip === zip);
   }
 
-  update(id: number, updateHospitalDto: UpdateHospitalDto) {}
+  _update(_id: number, _updateHospitalDto: UpdateHospitalDto) {}
 
-  remove(id: number) {}
+  _remove(_id: number) {}
 }
